@@ -19,7 +19,7 @@ namespace SmsAPP
             InitializeComponent();
         }
 
-        public string receipientnameguid;
+        public string recipientnameguid;
         public mmsclass mymessageob = new mmsclass();
         private void btnSendMsg_Click(object sender, EventArgs e)
         {
@@ -42,7 +42,7 @@ namespace SmsAPP
 
         private void Message_Load(object sender, EventArgs e)
         {
-            // TextMessage.Text = mymessageob.recipientnameguid;
+             TextMessage.Text = mymessageob.recipientnameguid;
             TextMessage.Focus();
             
         }

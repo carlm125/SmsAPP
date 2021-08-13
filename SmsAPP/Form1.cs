@@ -115,7 +115,7 @@ namespace SmsAPP
                 Guid myguid = Guid.NewGuid();
                 SQLiteCommand sqliteCommand2Execute;
                 sqliteCommand2Execute = dbconn.CreateCommand();
-                sqliteCommand2Execute.CommandText = "INSERT INTO sms  (guid, recipientnameguid, text ) VALUES('" + myguid.ToString() + "' , '" + myNewMessage.receipientnameguid + "); '";
+                sqliteCommand2Execute.CommandText = "INSERT INTO sms  (guid, recipientnameguid, text ) VALUES('" + myguid.ToString() + "' , '" + myNewMessage.recipientnameguid + "); '";
                 sqliteCommand2Execute.ExecuteNonQuery();
 
 
